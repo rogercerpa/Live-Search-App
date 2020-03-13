@@ -1,3 +1,4 @@
+
 const mysql = require('mysql');
 
 let connection;
@@ -13,4 +14,5 @@ if (process.env.JAWSDB_URL) {
 		database : 'burgers_db'
 	});
 }
+
 module.exports = connection;
