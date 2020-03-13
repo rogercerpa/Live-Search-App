@@ -7,8 +7,8 @@ if (process.env.JAWSDB_URL){
         port: 3306,
         user: "root",
         password: "avengers878",
-        database: "burgers_db"
+        database: "livesearch_db"
     });
 }
 
-connection.js
+module.exports = connection;
