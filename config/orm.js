@@ -1,3 +1,10 @@
+
+let connection = require("../config/connection");
+
+function name(params) {
+    
+}
+
 const connection = require('./connection');
 
 function printQuestionMarks(num) {
@@ -22,3 +29,4 @@ function objToSql(ob) {
 	return arr.toString();
 }
 module.exports = orm;
+
