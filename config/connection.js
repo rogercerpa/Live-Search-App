@@ -1,4 +1,5 @@
-const mysql = require("mysql");
+
+const mysql = require('mysql');
 
 let connection;
 
@@ -14,19 +15,5 @@ if (process.env.JAWSDB_URL) {
 	});
 }
 
-
-////////CONNECT TO DB///////
-connection.connect(err => {
-    if (err) {
-        console.log("error connecting: " + err.stack);
-        return;
-    }
-    console.log("connected as id " + connection.threadId);
-});
-
-
 module.exports = connection;
-
-
-
 
