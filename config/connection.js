@@ -1,3 +1,5 @@
+const mysql = require("mysql");
+
 let connection;
 if (process.env.JAWSDB_URL){
     connection = mysql.createConnection(process.env.JAWSDB_URL)
@@ -6,9 +8,19 @@ if (process.env.JAWSDB_URL){
         host: "localhost",
         port: 3306,
         user: "root",
-        password: "avengers878",
-        database: "burgers_db"
+        password: "triforce",
+        database: "liveSearch_db"
     });
 }
 
-connection.js
+////////CONNECT TO DB///////
+connection.connect(err => {
+    if (err) {
+        console.log("error connecting: " + err.stack);
+        return;
+    }
+    console.log("connected as id " + connection.threadId);
+});
+
+
+module.exports = connection;
