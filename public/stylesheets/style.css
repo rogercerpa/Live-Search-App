@@ -74,3 +74,17 @@ th {
 tr:nth-child(even) {
 	background-color: #dddddd;
 }
+
+
+/* Index.html styling */
+.indexHtmlImages {
+  width: 50%;
+}
+
+.theBestPlace {
+  margin-bottom: 48px;
+}
+
+.boldText {
+  margin: 0;
+}
