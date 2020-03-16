@@ -1,4 +1,76 @@
+/* font-family: 'Modak', cursive; */
+body {
+	box-sizing: border-box;
+}
+
 form.signup,
 form.login {
-  margin-top: 50px;
+	margin-top: 50px;
+}
+
+.liveSearch-logo {
+	text-align: left;
+	font-family: 'Modak', cursive;
+	letter-spacing: 0;
+	color: #000000;
+	opacity: 1;
+	font-size: 44px;
+}
+
+.btn-dark {
+	background-color: #000000;
+	border-color: #000000;
+	border-radius: 20px;
+}
+.btn-light {
+	background-color: white;
+	border-color: white;
+}
+
+button {
+	margin: 10px;
+}
+
+#vsearch {
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+#activity-image {
+	border-radius: 20px;
+	width: 262px;
+	height: 160px;
+}
+
+.content {
+	margin-top: 15px;
+	background: #f9f9f9 0% 0% no-repeat padding-box;
+	border: 2px solid #0c0b0b;
+	border-radius: 40px;
+	height: 674px;
+}
+
+.activities-topics {
+	/* text-align: left; */
+	font-family: 'Modak', cursive;
+	letter-spacing: 0;
+	color: #000000;
+	opacity: 1;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(even) {
+	background-color: #dddddd;
 }
