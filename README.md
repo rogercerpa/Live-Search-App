@@ -9,3 +9,8 @@ Instructions:
 Google Doc link
 
 https://docs.google.com/document/d/1EWzecJmQfSEAxf_fRHad6PIZNQixZS4b-TFdbfeHxG0/edit?ts=5e682d58
+
+Live Search Wireframe
+
+https://xd.adobe.com/view/b1bf2f8f-6e69-437d-4ce1-a338a772ff1e-c78e/
+
