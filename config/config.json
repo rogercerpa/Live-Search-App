@@ -1,7 +1,7 @@
 {
 	"development": {
 		"username": "root",
-		"password": "root",
+		"password": "avengers878",
 		"database": "passport_demo",
 		"host": "127.0.0.1",
 		"dialect": "mysql"
@@ -9,14 +9,14 @@
 	"test": {
 		"username": "root",
 		"password": "root",
-		"database": "database_test",
+		"database": "avengers878",
 		"host": "127.0.0.1",
 		"dialect": "mysql"
 	},
 	"production": {
 		"username": "root",
 		"password": "root",
-		"database": "database_production",
+		"database": "avengers878",
 		"host": "127.0.0.1",
 		"dialect": "mysql"
 	}
