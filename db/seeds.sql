@@ -1,5 +1,20 @@
 
 -- sequelize
+
+INSERT INTO sequelize (activity_name, main_topic, time_location, 
+homework, hint_comment, folder) VALUES ('Setting up sequelize', 'Setting up sequelize', 
+'1:10', true, 'Shows how to set up sequelize', 
+'https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/GT-ATL-FSF-PT-11-2019-U-C/tree/master/14-Full-Stack/04-Supplemental');
+
+INSERT INTO sequelize (activity_name, main_topic, time_location, 
+homework, hint_comment, folder) VALUES ('Setting up sequelize on bash terminal.', 'Setting up sequelize on bash terminal.',
+'6:51', true, 'Commands on terminal to set up sequelize project', 
+);
+
+INSERT INTO sequelize (activity_name, main_topic, time_location, 
+homework, hint_comment, folder) VALUES ('07-ORM-To-Sequelize', 'Briefly going over object model of sequelize', 
+'8:34', false, 'Object model for sequelize', 'https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/GT-ATL-FSF-PT-11-2019-U-C/tree/master/14-Full-Stack/01-Activities/07-ORM-To-Sequelize');
+=======
 INSERT INTO sequelize
     (activity_name, main_topic, time_location,homework, hint_comment, folder )
 VALUES
@@ -15,6 +30,11 @@ port
 https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/GT-ATL-FSF-PT-11-2019-U-C/tree/master/11-express/01-Activities/04-Serving-HTML
 ');
 
+INSERT INTO sequelize (activity_name, main_topic, time_location, 
+homework, hint_comment, folder) VALUES ('03-Chirpy-Sequelize', 'Chirpy Sequelize', '12:31', false, 'How to manipulate/define sequelize objects', 
+'https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/GT-ATL-FSF-PT-11-2019-U-C/tree/master/14-Full-Stack/01-Activities/03-Chirpy-Sequelize' 
+)
+-- INSERT INTO sequelize ()
 
 -- express
 INSERT INTO express
@@ -29,10 +49,18 @@ INSERT INTO OOP
 VALUES
     ('');
 
+
 -- Node.js
 INSERT INTO nodejs (activity_name, main_topic, time_location, homework, hint_comment, folder),
 VALUES
     ("8-Stu_TDD_Dissect", "TDD and Jest", "37:36", false, "Using Jest to test" "https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/GT-ATL-FSF-PT-11-2019-U-C/tree/master/10-OOP/01-Activities/08-Stu_TDD-Dissect"),
     ("9-STU_TDD", "Employing tdd before writing prototype methods", "1:08:00", false, ".prototype method", "https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/GT-ATL-FSF-PT-11-2019-U-C/tree/master/10-OOP/01-Activities/09-Stu_TDD"),
     ("10-Stu_Pass_Tests", "Fully functional tests", "2:19:25", true, "helps with wk 10 hw", "https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/GT-ATL-FSF-PT-11-2019-U-C/tree/master/10-OOP/01-Activities/10-Stu_Pass-Tests")
- 
+
+-- -- INSERT INTO cats (name) VALUES ('Meeses');
+-- INSERT INTO cats (name) VALUES ('Bobbi');
+-- INSERT INTO cats (name, sleepy) VALUES ('Sylvester', true);
+-- INSERT INTO cats (name, sleepy) VALUES ('Marilyn Manson', true);
+-- INSERT INTO cats (name, sleepy) VALUES ('Joe Biden', true);
+-- INSERT INTO cats (name) VALUES ('Owens');
+
