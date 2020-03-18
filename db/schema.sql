@@ -30,8 +30,8 @@ CREATE TABLE sequelize
         (255) NOT NULL,
     main_topic varchar
         (255) NOT NULL,
-    time_location DECIMAL
-        (10,4) NULL,
+    time_location varchar
+        (255) NOT NULL,
 	homework BOOLEAN DEFAULT false,
     hint_comment varchar
         (255)NULL,
@@ -49,8 +49,8 @@ CREATE TABLE sequelize
             (255) NOT NULL,
     main_topic varchar
             (255) NOT NULL,
-    time_location DECIMAL
-            (10,4) NULL,
+    time_location varchar
+            (255) NOT NULL,
 	homework BOOLEAN DEFAULT false,
     hint_comment varchar
             (255)NULL,
@@ -87,8 +87,8 @@ CREATE TABLE sequelize
                     (255) NOT NULL,
     main_topic varchar
                     (255) NOT NULL,
-    time_location DECIMAL
-                    (10,4) NULL,
+    time_location varchar
+                    (255) NOT NULL,
     
 	homework BOOLEAN DEFAULT false,
     hint_comment varchar
