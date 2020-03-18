@@ -1,5 +1,5 @@
 
-DROP DATABASE EXISTs liveSearch_db;
+DROP DATABASE if EXISTs liveSearch_db;
 CREATE DATABASE liveSearch_db;
 USE liveSearch_db;
 
