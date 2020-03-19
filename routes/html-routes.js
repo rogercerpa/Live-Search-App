@@ -28,4 +28,16 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
+
+
+  // Route once you click image it populates livevideos.html with info correlated to subject/picture
+  app.get("/livevideos", function(req, res) {
+    // If the user already has an account send them to the members page
+    // if (req.user) {
+    //   res.redirect("/livevideos");
+    // }
+    res.sendFile(path.join(__dirname, "../public/livevideos.html"));
+    console.log("asdfasdfasdf");
+  });
+
 };
