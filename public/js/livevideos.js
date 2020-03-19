@@ -1,8 +1,8 @@
-const params = window.location.imageName;
+const params = window.location.videoName;
 const urlParamsObj = getUrlParams(params);
 
-if (urlParamsObj['imageName']) {
-	const activityTitle = urlParamsObj['imageName'];
+if (urlParamsObj['videoName']) {
+	const activityTitle = urlParamsObj['videoName'];
 }
 
 console.log(imageName);
@@ -19,7 +19,7 @@ const activityComment = $('.hint.comment');
 const activityFolder = $('.gitlab-folder');
 
 function showActivity() {
-	$.post('/api/activity', {
+	$.get('/api/activity/' + videoName, {
 		activityTitle : activityTitle
 	}).then(function() {});
 }
