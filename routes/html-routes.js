@@ -8,16 +8,30 @@ module.exports = function(app) {
 	app.get('/', function(req, res) {
 		// If the user already has an account send them to the members page
 		if (req.user) {
-			res.redirect('/index');
+			res.redirect('/signup');
 		}
 
 		res.sendFile(path.join(__dirname, '../public/signup.html'));
 	});
 
+
+
+
+  // Route once you click image it populates livevideos.html with info correlated to subject/picture
+  app.get("/livevideos", function(req, res) {
+    // If the user already has an account send them to the members page
+    // if (req.user) {
+    //   res.redirect("/livevideos");
+    // }
+    res.sendFile(path.join(__dirname, "../public/livevideos.html"));
+    console.log("asdfasdfasdf");
+  });
+
+
 	app.get('/login', function(req, res) {
 		// If the user already has an account send them to the members page
 		if (req.user) {
-			res.redirect('/members');
+			res.redirect('/login');
 		}
 
 		res.sendFile(path.join(__dirname, '../public/login.html'));
@@ -36,4 +50,5 @@ module.exports = function(app) {
 	app.get('/livevideos', isAuthenticated, function(req, res) {
 		res.sendFile(path.join(__dirname, '../public/livevideos.html'));
 	});
+
 };
