@@ -10,7 +10,7 @@ const express = sequelize.define("express",
             hint_comment: DataTypes.STRING,
             folder: DataTypes.STRING,
 
-            freezeexpress: true,
+            freezeTableName: true
         })
 return express;
     };
