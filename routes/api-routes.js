@@ -2,7 +2,39 @@
 var db = require("../models");
 var passport = require("../config/passport");
 
-module.exports = function(app) {
+module.exports = (app) => {
+
+  app.get("/api/expressTable", (req, res) => {
+    db.express.findAll({})
+      .then((dbExpress) => {
+        res.json(dbExpress);
+      });
+  });
+
+  app.get("/api/OOPtable", (req, res) => {
+    db.OOP.findAll({})
+      .then((dbOOP) => {
+        res.json(dbOOP);
+      });
+  });
+
+  app.get("/api/NodejsTable", (req, res) => {
+    db.nodejs.findAll({})
+      .then((dbNodejs) => {
+        res.json(dbNodejs);
+      });
+  });
+
+  app.get("/api/sequelizeTable", (req, res) => {
+    db.sequelize.findAll({})
+      .then((dbSequelize) => {
+        res.json(dbSequelize);
+      });
+  });
+  
+
+
+
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
