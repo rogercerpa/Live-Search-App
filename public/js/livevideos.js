@@ -1,7 +1,30 @@
-$(document).ready(function() {
-	const searchButton = $('form.topicSearch');
-	const userSearch = $('input#vsearch');
+const params = window.location.videoName;
+const urlParamsObj = getUrlParams(params);
 
+if (urlParamsObj['videoName']) {
+	const activityTitle = urlParamsObj['videoName'];
+}
+
+console.log(imageName);
+
+const searchButton = $('form.topicSearch');
+const userSearch = $('input#vsearch');
+
+const activityImage = $('#activity-image');
+const activityName = $('.activity-name');
+const activityTopics = $('.topics');
+const activityTime = $('.time-location');
+const activityHw = $('.homework');
+const activityComment = $('.hint.comment');
+const activityFolder = $('.gitlab-folder');
+
+function showActivity() {
+	$.get('/api/activity/' + videoName, {
+		activityTitle : activityTitle
+	}).then(function() {});
+}
+
+$(document).ready(function() {
 	searchButton.on('submit', function(event) {
 		event.preventDefault();
 		const topic = {
