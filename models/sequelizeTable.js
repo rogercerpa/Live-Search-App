@@ -2,7 +2,7 @@
 ////////export module
 module.exports = (sequelize, DataTypes) => {
 
-///////tables
+    ///////tables
     const sequelizeTable = sequelize.define("sequelize",
         {
             activity_name: {
@@ -10,28 +10,26 @@ module.exports = (sequelize, DataTypes) => {
                 allowNull: false,
             },
             main_topic: {
-                type:DataTypes.STRING,
+                type: DataTypes.STRING,
             },
             time_location: {
-                type:DataTypes.STRING,
+                type: DataTypes.STRING,
             },
             homework: {
-                type:DataTypes.BOOLEAN,
+                type: DataTypes.BOOLEAN,
             },
             hint_comment: {
-                type:DataTypes.STRING,
+                type: DataTypes.STRING,
             },
             folder: {
-                types:DataTypes.STRING,
-            },
+                type: DataTypes.STRING,
+            }
+        }, {
+        ////////Do not pluralize table names
+        freezeTableName: true
+    });
 
-
-////////Do not pluralize table names
-freezeTableName: true
-
-});
-
-////////returns table
+    ////////returns table
     return sequelizeTable;
 
 };
