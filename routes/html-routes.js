@@ -10,30 +10,22 @@ module.exports = function(app) {
 		if (req.user) {
 			res.redirect('/signup');
 		}
-
 		res.sendFile(path.join(__dirname, '../public/signup.html'));
 	});
 
-
-
-
-  // Route once you click image it populates livevideos.html with info correlated to subject/picture
-  app.get("/livevideos", function(req, res) {
-    // If the user already has an account send them to the members page
-    // if (req.user) {
-    //   res.redirect("/livevideos");
-    // }
-    res.sendFile(path.join(__dirname, "../public/livevideos.html"));
-    console.log("asdfasdfasdf");
-  });
-
+	// Route once you click image it populates livevideos.html with info correlated to subject/picture
+	app.get('/livevideos', function(req, res) {
+		// If the user already has an account send them to the members page
+		// if (req.user) {
+		//   res.redirect("/livevideos");
+		// }
+		res.sendFile(path.join(__dirname, '../public/livevideos.html'));
+	});
 
 	app.get('/login', function(req, res) {
-		// If the user already has an account send them to the members page
 		if (req.user) {
 			res.redirect('/login');
 		}
-
 		res.sendFile(path.join(__dirname, '../public/login.html'));
 	});
 
@@ -50,5 +42,10 @@ module.exports = function(app) {
 	app.get('/livevideos', isAuthenticated, function(req, res) {
 		res.sendFile(path.join(__dirname, '../public/livevideos.html'));
 	});
-
+	app.get('/signup', isAuthenticated, function(req, res) {
+		res.sendFile(path.join(__dirname, '../public/signup.html'));
+	});
+	app.get('/login', isAuthenticated, function(req, res) {
+		res.sendFile(path.join(__dirname, '../public/login.html'));
+	});
 };

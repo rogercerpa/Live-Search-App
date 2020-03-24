@@ -1,11 +1,40 @@
-const params = window.location.videoName;
-const urlParamsObj = getUrlParams(params);
+//gets the URL and makes it available to use
+const params = window.location.search;
+console.log(params);
+const urlParams = new URLSearchParams(params);
+//gives us the name of the video that was clicked on
+const videoName = urlParams.get('videoName');
+console.log(videoName);
 
-if (urlParamsObj['videoName']) {
-	const activityTitle = urlParamsObj['videoName'];
+// $.ajax({
+// 	url    : '/api/' + videoName + 'Table',
+// 	method : 'GET'
+// }).then(function(data) {
+// 	console.log(data);
+// });
+
+// if (urlParamsObj['videoName']) {
+// 	const activityTitle = urlParamsObj['videoName'];
+// }
+
+// console.log(activityTitle);
+
+// this will gather all the data from this activity and make it available to be added to the results website
+function getVideo() {
+	$.get('/api/' + videoName + 'Table', (data) => {
+		console.log(data);
+		// expressTable = data;
+		// if (!expressTable || !expressTable.length) {
+		// 	alert('no activities found, try again later!');
+		// } else {
+		// 	videoInfo();
+		// }
+	});
 }
 
-console.log(imageName);
+getVideo();
+
+function videoInfo() {}
 
 const searchButton = $('form.topicSearch');
 const userSearch = $('input#vsearch');
@@ -17,12 +46,6 @@ const activityTime = $('.time-location');
 const activityHw = $('.homework');
 const activityComment = $('.hint.comment');
 const activityFolder = $('.gitlab-folder');
-
-function showActivity() {
-	$.get('/api/activity/' + videoName, {
-		activityTitle : activityTitle
-	}).then(function() {});
-}
 
 $(document).ready(function() {
 	searchButton.on('submit', function(event) {
