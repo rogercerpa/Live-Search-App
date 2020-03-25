@@ -5,6 +5,7 @@ const urlParams = new URLSearchParams(params);
 //gives us the name of the video that was clicked on
 const videoName = urlParams.get('videoName');
 console.log(videoName);
+// alert(videoName);
 
 
 
@@ -13,21 +14,32 @@ console.log(videoName);
 // maybe function to do it
 //const activityImage = $('#activity-image');
 // change mySQL image to OOOP image instead
-if (videoName = "sequelize") {
-	img src = sequelize.jpg
-} elseif {
-	video
+//document.getElementById("imageid").src="../template/save.png";
+if (videoName == "sequelize") {
+	document.getElementById("activity-image").src="../images/sequelize-logo.jpg";
+} 
+
+if (videoName == "express") {
+	document.getElementById("activity-image").src="../images/express-logo.png";
+	// var imgSrc = '../images/express-logo.png';
+	// $('.activity-image').attr('src', imgSrc);
+}
+
+if (videoName == "MySQL") {
+	document.getElementById("activity-image").src="../images/mysql-logo.png";
+}
+
+if (videoName == "Javascript") {
+	document.getElementById("activity-image").src="../images/logo-javascript.png";
 }
 
 
-switch (key) {
-	case value:
-		
-		break;
+// var imgSrc = '../images/express-logo.png';
+// $('.activity-image').attr('src', imgSrc);
 
-	default:
-		break;
-}
+
+
+
 // $.ajax({
 // 	url    : '/api/' + videoName + 'Table',
 // 	method : 'GET'
