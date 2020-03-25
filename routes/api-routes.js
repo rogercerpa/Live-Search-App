@@ -21,8 +21,8 @@ module.exports = (app) => {
 		});
 	});
 
-	app.get('/api/sequelizeTable', (req, res) => {
-		db.sequelize.findAll({}).then((dbSequelize) => {
+	app.get('/api/sequelizeTable/', (req, res) => {
+		db.sequelData.findAll({}).then((dbSequelize) => {
 			res.json(dbSequelize);
 			console.log(dbSequelize);
 		});

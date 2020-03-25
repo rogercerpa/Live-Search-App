@@ -21,7 +21,7 @@ console.log(videoName);
 
 // this will gather all the data from this activity and make it available to be added to the results website
 function getVideo() {
-	$.get('/api/' + videoName + 'Table', (data) => {
+	$.get('/api/' + videoName + 'Table/', (data) => {
 		console.log(data);
 		// expressTable = data;
 		// if (!expressTable || !expressTable.length) {
