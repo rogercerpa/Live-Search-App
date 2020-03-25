@@ -6,6 +6,28 @@ const urlParams = new URLSearchParams(params);
 const videoName = urlParams.get('videoName');
 console.log(videoName);
 
+
+
+//images specific to what clicked on
+// change /src of activity-image
+// maybe function to do it
+//const activityImage = $('#activity-image');
+// change mySQL image to OOOP image instead
+if (videoName = "sequelize") {
+	img src = sequelize.jpg
+} elseif {
+	video
+}
+
+
+switch (key) {
+	case value:
+		
+		break;
+
+	default:
+		break;
+}
 // $.ajax({
 // 	url    : '/api/' + videoName + 'Table',
 // 	method : 'GET'
@@ -21,7 +43,7 @@ console.log(videoName);
 
 // this will gather all the data from this activity and make it available to be added to the results website
 function getVideo() {
-	$.get('/api/' + videoName + 'Table/', (data) => {
+	$.get('/api/' + videoName + 'Table', (data) => {
 		console.log(data);
 		// expressTable = data;
 		// if (!expressTable || !expressTable.length) {

@@ -1,7 +1,7 @@
 
 -- SEQUELIZE
 
-INSERT INTO sequelize
+INSERT INTO sequelData
     (activity_name, main_topic, time_location,
     homework, hint_comment, folder)
 VALUES
