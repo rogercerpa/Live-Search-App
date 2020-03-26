@@ -5,6 +5,40 @@ const urlParams = new URLSearchParams(params);
 //gives us the name of the video that was clicked on
 const videoName = urlParams.get('videoName');
 console.log(videoName);
+// alert(videoName);
+
+
+
+//images specific to what clicked on
+// change /src of activity-image
+// maybe function to do it
+//const activityImage = $('#activity-image');
+// change mySQL image to OOOP image instead
+//document.getElementById("imageid").src="../template/save.png";
+if (videoName == "sequelize") {
+	document.getElementById("activity-image").src="../images/sequelize-logo.jpg";
+} 
+
+if (videoName == "express") {
+	document.getElementById("activity-image").src="../images/express-logo.png";
+	// var imgSrc = '../images/express-logo.png';
+	// $('.activity-image').attr('src', imgSrc);
+}
+
+if (videoName == "MySQL") {
+	document.getElementById("activity-image").src="../images/mysql-logo.png";
+}
+
+if (videoName == "Javascript") {
+	document.getElementById("activity-image").src="../images/logo-javascript.png";
+}
+
+
+// var imgSrc = '../images/express-logo.png';
+// $('.activity-image').attr('src', imgSrc);
+
+
+
 
 // $.ajax({
 // 	url    : '/api/' + videoName + 'Table',
@@ -21,7 +55,7 @@ console.log(videoName);
 
 // this will gather all the data from this activity and make it available to be added to the results website
 function getVideo() {
-	$.get('/api/' + videoName + 'Table/', (data) => {
+	$.get('/api/' + videoName + 'Table', (data) => {
 		console.log(data);
 		// expressTable = data;
 		// if (!expressTable || !expressTable.length) {

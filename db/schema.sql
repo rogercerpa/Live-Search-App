@@ -5,6 +5,8 @@ USE liveSearch_db;
 
 CREATE TABLE sequelize
 (
+    ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dt DATETIME DEFAULT CURRENT_TIMESTAMP,
     id int NOT NULL AUTO_INCREMENT,
 	activity_name varchar(255) NOT NULL,
     main_topic varchar(255) NOT NULL,
@@ -17,6 +19,8 @@ CREATE TABLE sequelize
 
 CREATE TABLE express
 (
+    ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dt DATETIME DEFAULT CURRENT_TIMESTAMP,
     id int NOT NULL AUTO_INCREMENT,
 	activity_name varchar (255) NOT NULL,
     main_topic varchar(255) NOT NULL,
@@ -29,6 +33,8 @@ CREATE TABLE express
 
 CREATE TABLE OOP
 (
+    ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dt DATETIME DEFAULT CURRENT_TIMESTAMP,
     id int NOT NULL AUTO_INCREMENT,
 	activity_name varchar(255) NOT NULL,
     main_topic varchar(255) NOT NULL,
@@ -41,6 +47,8 @@ CREATE TABLE OOP
 
 CREATE TABLE nodejs
 (
+    ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dt DATETIME DEFAULT CURRENT_TIMESTAMP,
     id int NOT NULL AUTO_INCREMENT,
 	activity_name varchar(255) NOT NULL,
     main_topic varchar(255) NOT NULL,
@@ -53,6 +61,8 @@ CREATE TABLE nodejs
 
 CREATE TABLE javascript
 (
+    ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dt DATETIME DEFAULT CURRENT_TIMESTAMP,
     id int NOT NULL AUTO_INCREMENT,
 	activity_name varchar(255) NOT NULL,
     main_topic varchar(255) NOT NULL,
