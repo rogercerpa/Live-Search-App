@@ -7,38 +7,36 @@ const videoName = urlParams.get('videoName');
 console.log(videoName);
 // alert(videoName);
 
-
-
 //images specific to what clicked on
 // change /src of activity-image
 // maybe function to do it
 //const activityImage = $('#activity-image');
 // change mySQL image to OOOP image instead
 //document.getElementById("imageid").src="../template/save.png";
-if (videoName == "sequelize") {
-	document.getElementById("activity-image").src="../images/sequelize-logo.jpg";
-} 
+if (videoName == 'sequelize') {
+	document.getElementById('activity-image').src =
+		'../images/sequelize-logo.jpg';
+	document.getElementById('activity-link').href =
+		'https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=586c8226-e3ea-4955-be08-ab7501814621';
+}
 
-if (videoName == "express") {
-	document.getElementById("activity-image").src="../images/express-logo.png";
+if (videoName == 'express') {
+	document.getElementById('activity-image').src = '../images/express-logo.png';
 	// var imgSrc = '../images/express-logo.png';
 	// $('.activity-image').attr('src', imgSrc);
 }
 
-if (videoName == "MySQL") {
-	document.getElementById("activity-image").src="../images/mysql-logo.png";
+if (videoName == 'MySQL') {
+	document.getElementById('activity-image').src = '../images/mysql-logo.png';
 }
 
-if (videoName == "Javascript") {
-	document.getElementById("activity-image").src="../images/logo-javascript.png";
+if (videoName == 'Javascript') {
+	document.getElementById('activity-image').src =
+		'../images/logo-javascript.png';
 }
-
 
 // var imgSrc = '../images/express-logo.png';
 // $('.activity-image').attr('src', imgSrc);
-
-
-
 
 // $.ajax({
 // 	url    : '/api/' + videoName + 'Table',
@@ -63,6 +61,19 @@ function getVideo() {
 		// } else {
 		// 	videoInfo();
 		// }
+	}).then(function(data) {
+		const actName = data[0].activity_name;
+		const actTopics = data[0].main_topic;
+		const actTime = data[0].time_location;
+		const actHw = data[0].homework;
+		const actComment = data[0].hint_comment;
+		const actFolder = data[0].folder;
+		$('.activity-name').text(actName);
+		$('.topics').text(actTopics);
+		$('.time-location').text(actTime);
+		$('.homework').text(actHw);
+		$('.hint-comment').text(actComment);
+		$('.gitlab-folder').attr('href', actFolder);
 	});
 }
 
