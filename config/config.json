@@ -1,9 +1,9 @@
 {
 	"development": {
-		"username": "root",
-		"password": null,
-		"database": "livesearch_db",
-		"host": "127.0.0.1",
+		"username": "qfnv1826s78epxq5",
+		"password": "njw926bh30zo3v1p",
+		"database": "q84yszg0szcdjang",
+		"host": "z37udk8g6jiaqcbx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
 		"dialect": "mysql"
 	},
 	"test": {
@@ -14,6 +14,10 @@
 		"dialect": "mysql"
 	},
 	"production": {
+		"username": "qfnv1826s78epxq5",
+		"password": "njw926bh30zo3v1p",
+		"database": "q84yszg0szcdjang",
+		"host": "z37udk8g6jiaqcbx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
 		"use_env_variable": "JAWSDB_URL",
 		"dialect": "mysql"
 	}
