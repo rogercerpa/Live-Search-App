@@ -46,10 +46,18 @@ button {
 
 .content {
 	margin-top: 15px;
+	margin-bottom: 15px;
 	background: #f9f9f9 0% 0% no-repeat padding-box;
 	border: 2px solid #0c0b0b;
-	border-radius: 40px;
-	height: 674px;
+	border-radius: 30px;
+	height: auto;
+}
+
+.panoptoVideo {
+	font-family: 'Modak', cursive;
+	letter-spacing: 0;
+	color: #000000;
+	opacity: 1;
 }
 
 .activities-topics {
@@ -75,52 +83,48 @@ tr:nth-child(even) {
 	background-color: #dddddd;
 }
 
-
 /* Index.html styling */
 .indexHtmlImages {
-  width: 50%;
+	width: 50%;
 }
 
 .theBestPlace {
-  margin-bottom: 7px;
-  width: 559px;
-  font-size: 1.72em;
-  font-family: Arial, Helvetica, sans-serif;
-
+	margin-bottom: 7px;
+	width: 559px;
+	font-size: 1.72em;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .boldText {
-  margin-left: 190px;
+	margin-left: 190px;
 }
 
 .marginLeft {
-  margin-left: 190px;
-  margin-top: -15px;
+	margin-left: 190px;
+	margin-top: -15px;
 }
 
 #activity-image-on-index-html {
 	border-radius: 20px;
-  width: 340.6px;
-  height: 208px;
-  margin-top: 11px;
-  /* margin: 22px; */
-  /* margin-left: 150px;
+	width: 340.6px;
+	height: 208px;
+	margin-top: 11px;
+	/* margin: 22px; */
+	/* margin-left: 150px;
   margin-top: -75px; */
 }
 .imagesOnIndexHtml {
-  margin-left: 150px;
-  margin-top: -75px;
+	margin-left: 150px;
+	margin-top: -75px;
 }
 
 .contentOnIndexHtml {
-  margin-top: 15px;
+	margin-top: 15px;
 	background: #f9f9f9 0% 0% no-repeat padding-box;
 	border: 2px solid #0c0b0b;
 	border-radius: 40px;
-  /* height: 851px; */
-  width: 103%;
+	/* height: 851px; */
+	width: 103%;
 }
-
-
 
 /*  */
