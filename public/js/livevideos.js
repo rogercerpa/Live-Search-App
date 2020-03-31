@@ -12,6 +12,8 @@ if (videoName == 'sequelize') {
 		'../images/sequelize-logo.jpg';
 	document.getElementById('activity-link').href =
 		'https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=586c8226-e3ea-4955-be08-ab7501814621';
+	document.getElementById('activity-link1').href =
+		'https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=586c8226-e3ea-4955-be08-ab7501814621';
 }
 
 if (videoName == 'express') {
@@ -22,6 +24,8 @@ if (videoName == 'express') {
 if (videoName == 'MySQL') {
 	document.getElementById('activity-image').src = '../images/mysql-logo.png';
 	document.getElementById('activity-link').href =
+		'https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=645a8c5f-0b3a-4c25-aaa3-ab58002f0efe';
+	document.getElementById('activity-link1').href =
 		'https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=645a8c5f-0b3a-4c25-aaa3-ab58002f0efe';
 }
 
