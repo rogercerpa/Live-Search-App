@@ -6,6 +6,12 @@ Follow the instruction below on how to use the app and enjoy:
 
 ## Instructions:
 
+* Review and Practice some of your favorite topics from class.
+
+<p align="center">
+  <img alt="LiveSearch" src="../public/images/demo-image.PNG">
+</p>
+
 # Google Doc link
 
 https://docs.google.com/document/d/1EWzecJmQfSEAxf_fRHad6PIZNQixZS4b-TFdbfeHxG0/edit?ts=5e682d58
