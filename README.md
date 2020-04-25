@@ -24,9 +24,12 @@ https://xd.adobe.com/view/b1bf2f8f-6e69-437d-4ce1-a338a772ff1e-c78e/
 
 ## Technologies Used:
 
-* Sequelize ORM              * JSON
-* Javascript                 * Bootstrap
-* Node.js                    * mySQL
+* Sequelize ORM              
+* JSON
+* Javascript                 
+* Bootstrap
+* Node.js                    
+* mySQL
 
 ## Contributors:
 
