@@ -8,9 +8,7 @@ Follow the instruction below on how to use the app and enjoy:
 
 * Review and Practice some of your favorite topics from class.
 
-<p align="center">
-  <img alt="LiveSearch" src="../public/images/demo-image.PNG">
-</p>
+![alt text](https://github.com/rogercerpa/Live-Search-App/blob/master/public/images/demo-image.PNG)
 
 # Google Doc link
 
